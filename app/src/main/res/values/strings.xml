@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Password Generator</string>
+    <string name="buttonGenerate">Generate</string>
+    <string name="fieldPass">Your password</string>
+    <string name="radioOne">Password with letters and special symbols</string>
+    <string name="radioTwo">Password only with letters</string>
+    <string name="radioThree">Password only with big letters</string>
+    <string name="radioFour">Password only with small letters</string>
+    <string name="radioFive">Password only with special symbols</string>
+    <string name="radioSix">Password only with digits</string>
+    <string name="buttonSubmit">Submit</string>
+    <string name="digitNumberLabel">Password length: </string>
+    <string name="menuSettings">Settings</string>
+</resources>
