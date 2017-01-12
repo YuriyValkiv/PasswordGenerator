@@ -150,4 +150,24 @@ public class PassGenerator {
         return password;
     }
 
+    public String createPassCustom(int numberOfSmallLetters, int numberOfBigLetters, int numberOfSymbols, int numberOfDigits) {
+        String passwordOne = "";
+        String password = "";
+        characters = new ArrayList<>();
+        PassGenerator passGenerator = new PassGenerator();
+        passwordOne = passGenerator.createPassOnlyBigLetters(numberOfBigLetters);
+        passwordOne += passGenerator.createPassOnlySmallLetters(numberOfSmallLetters);
+        passwordOne += passGenerator.createPassOnlySpecialSymbols(numberOfSymbols);
+        passwordOne += passGenerator.createPassOnlyDigits(numberOfDigits);
+        char [] passChars = passwordOne.toCharArray();
+        for (char charOne : passChars) {
+            characters.add(charOne);
+        }
+        Collections.shuffle(characters);
+        for (char passwordChars : characters) {
+            password += passwordChars;
+        }
+        return password;
+    }
+
 }

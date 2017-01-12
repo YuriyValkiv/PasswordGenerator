@@ -39,7 +39,16 @@ public class MainActivity extends AppCompatActivity {
                     int passMethod = Integer.parseInt(createPassMethod);
                     switch (passMethod) {
                         case 1:
-                            password = new PassGenerator().createPass(passLen);
+                            String smallLetters = sharedPreferences.getString("smallLetters", "");
+                            int smallLett = Integer.parseInt(smallLetters);
+                            String bigLetters = sharedPreferences.getString("bigLetters", "");
+                            int bigLett = Integer.parseInt(bigLetters);
+                            String symbols = sharedPreferences.getString("symbols", "");
+                            int sumbolsInt = Integer.parseInt(symbols);
+                            String digits = sharedPreferences.getString("digits", "");
+                            int digitsInt = Integer.parseInt(digits);
+
+                            password = new PassGenerator().createPassCustom(smallLett, bigLett, sumbolsInt, digitsInt);
                             break;
                         case 2:
                             password = new PassGenerator().createPassOnlyLetters(passLen);

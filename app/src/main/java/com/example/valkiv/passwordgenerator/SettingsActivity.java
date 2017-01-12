@@ -14,17 +14,20 @@ import android.widget.Toast;
 
 public class SettingsActivity extends AppCompatActivity{
 
+    Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
         submitButtonAction();
+        selectedCustomPass();
     }
 
     public void submitButtonAction() {
-        final Context context = this;
-        String MyPrefferences = "MyPref";
-        final SharedPreferences sharedPreferences = getSharedPreferences(MyPrefferences, Context.MODE_PRIVATE);
+        context = this;
+        String MyPreferences = "MyPref";
+        final SharedPreferences sharedPreferences = getSharedPreferences(MyPreferences, Context.MODE_PRIVATE);
 
         Button submit = (Button) findViewById(R.id.buttonSubmit);
         submit.setOnClickListener(new View.OnClickListener() {
@@ -45,9 +48,10 @@ public class SettingsActivity extends AppCompatActivity{
 
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     switch (radioSel) {
-                        case "Password with letters and special symbols":
-                            editor.putString("radio", "1");
-                            break;
+//                        case "Password with letters and special symbols":
+////                            editor.putString("radio", "1");
+//                            selectedCustomPass();
+//                            break;
                         case "Password only with letters":
                             editor.putString("radio", "2");
                             break;
@@ -63,9 +67,6 @@ public class SettingsActivity extends AppCompatActivity{
                         case "Password only with digits":
                             editor.putString("radio", "6");
                             break;
-                        default:
-                            editor.putString("radio", "1");
-                            break;
                     }
                     editor.putString("passLength", passLength);
                     editor.commit();
@@ -73,6 +74,18 @@ public class SettingsActivity extends AppCompatActivity{
                     Intent intent = new Intent(context, MainActivity.class);
                     startActivity(intent);
                 }
+            }
+        });
+    }
+
+    public void selectedCustomPass() {
+        context = this;
+        Button button = (Button) findViewById(R.id.buttonCustomPass);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, CustomPassActivity.class);
+                startActivity(intent);
             }
         });
     }

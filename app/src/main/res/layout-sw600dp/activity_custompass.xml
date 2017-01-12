@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_customPass"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:text="@string/numberOfSmallLetters"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:id="@+id/textSmallLetters" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:ems="10"
+        android:id="@+id/smallLetters" />
+
+    <TextView
+        android:text="@string/numberOfBigLetters"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textSmallLetters"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:id="@+id/textBigLetters" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/smallLetters"
+        android:gravity="center"
+        android:inputType="number"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:ems="10"
+        android:id="@+id/bigLetters" />
+
+    <TextView
+        android:text="@string/numberOfSymbols"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textBigLetters"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:id="@+id/textSymbols" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bigLetters"
+        android:gravity="center"
+        android:inputType="number"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:ems="10"
+        android:id="@+id/symbols" />
+
+    <TextView
+        android:text="@string/numberOfDigits"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textSymbols"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:id="@+id/textDigits" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/symbols"
+        android:gravity="center"
+        android:inputType="number"
+        android:text=""
+        android:textSize="30sp"
+        android:ems="10"
+        android:textColor="#000000"
+        android:id="@+id/digits" />
+
+    <Button
+        android:text="@string/buttonSubmit"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:shadowColor="#A8A8A8"
+        android:background="@drawable/buttonshape"
+
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_below="@+id/digits"
+        android:id="@+id/buttonSubmitCustomPass" />
+
+</RelativeLayout>

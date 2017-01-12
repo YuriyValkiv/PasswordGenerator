@@ -11,4 +11,10 @@
     <string name="buttonSubmit">Submit</string>
     <string name="digitNumberLabel">Password length: </string>
     <string name="menuSettings">Settings</string>
+    <string name="numberOfBigLetters">Number of big letters: </string>
+    <string name="numberOfSmallLetters">Number of small letters: </string>
+    <string name="numberOfSymbols">Number of symbols: </string>
+    <string name="numberOfDigits">Number of digits: </string>
+    <string name="textOr">OR</string>
+    <string name="buttonCustomPass">Custom Password</string>
 </resources>
