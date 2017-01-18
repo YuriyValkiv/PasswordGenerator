@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.valkiv.passwordgenerator.SettingsActivity">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:text="@string/radioOne"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton1"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/radioTwo"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/radioThree"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/radioFour"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton4"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/radioFive"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton5"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="@string/radioSix"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton6"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/digitNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_toStartOf="@+id/passLength"
+        android:layout_toLeftOf="@+id/passLength"
+        android:layout_below="@id/radioGroup"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:id="@+id/textViewPass" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="720"
+        android:textSize="14sp"
+        android:ems="10"
+        android:id="@+id/passLength" />
+
+    <Button
+        android:text="@string/buttonSubmit"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:shadowColor="#A8A8A8"
+        android:background="@drawable/buttonshape"
+
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_below="@+id/passLength"
+        android:id="@+id/buttonSubmit" />
+
+</RelativeLayout>

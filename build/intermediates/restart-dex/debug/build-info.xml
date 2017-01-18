@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86_64,x86"
+    api-level="22"
+    density="420dpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="15760176617179"
+    token="-2113719216326811160"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="4273" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="757" />
+    <task
+        name="verifier"
+        duration="6" />
+
+    <artifact
+        location="/home/valkiv/AndroidStudioProjects/PasswordGenerator/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="15760176617179"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/home/valkiv/AndroidStudioProjects/PasswordGenerator/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

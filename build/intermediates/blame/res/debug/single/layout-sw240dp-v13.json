@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/valkiv/AndroidStudioProjects/PasswordGenerator/app/build/intermediates/res/merged/debug/layout-sw240dp-v13/activity_main.xml",
+        "source": "/home/valkiv/AndroidStudioProjects/PasswordGenerator/app/src/main/res/layout-sw240dp/activity_main.xml"
+    },
+    {
+        "merged": "/home/valkiv/AndroidStudioProjects/PasswordGenerator/app/build/intermediates/res/merged/debug/layout-sw240dp-v13/activity_settings.xml",
+        "source": "/home/valkiv/AndroidStudioProjects/PasswordGenerator/app/src/main/res/layout-sw240dp/activity_settings.xml"
+    }
+]
